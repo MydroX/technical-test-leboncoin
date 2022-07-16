@@ -8,6 +8,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+// HomeBody is the body of the request for the "/" endpoint
 type HomeBody struct {
 	Int1  int    `json:"int1"`
 	Int2  int    `json:"int2"`
@@ -16,6 +17,7 @@ type HomeBody struct {
 	Str2  string `json:"str2"`
 }
 
+// Home is the handler function for the "/" endpoint
 func Home(c *gin.Context) {
 	c.Header("Content-Type", "application/json")
 
